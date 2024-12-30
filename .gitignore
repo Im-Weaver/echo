@@ -1,2 +1,6 @@
 /config
 /node_modules
+/routes
+/schemas
+/functions
+/middleware

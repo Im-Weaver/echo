@@ -14,8 +14,9 @@ app.use(express.json());
 app.use(cors());
 
 
+const userRouter = require('./routes/user/user.router')
 
-
+app.use('/user', userRouter);
 
 mongoose.connect(process.env.DB_CONNECTION,
     {
@@ -24,9 +25,10 @@ mongoose.connect(process.env.DB_CONNECTION,
     }
     ).then((res)=>{
         console.log("Connection established to database"); 
-        // console.log(res)
     })
 
+
+const colorConsole = require('./debug/colorConsole.function');
 server.listen(process.env.PORT, () => {
-    console.log('Server active: PORT', port)
+    colorConsole("Green", "", "", `Server active: PORT ` + port); 
 });

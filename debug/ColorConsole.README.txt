@@ -1,0 +1,9 @@
+We want to use a organized color scheme for our console. 
+
+Foreground colors:
+Yellow - and attempt is being made - initial intent
+
+Background Colors:
+Green - Intent completed succesffully - intent PASS
+Red - Intent was unsuccessful. - intent FAIL
+Yellow - Intent was unsuccessful, but non-breaking / error inducing. 
