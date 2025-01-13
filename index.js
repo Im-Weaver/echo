@@ -15,8 +15,10 @@ app.use(cors());
 
 
 const userRouter = require('./routes/user/user.router')
+const gameRouter = require('./routes/games/game.router')
 
 app.use('/user', userRouter);
+app.use('/game', gameRouter);
 
 mongoose.connect(process.env.DB_CONNECTION,
     {

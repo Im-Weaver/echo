@@ -64,7 +64,7 @@ const DetermineFormat = (Form) => {
 
 let ColorConsole = (Fg, Bg, Frm, Log) => {
     let str = `${DetermineFG(Fg) + DetermineBG(Bg) + DetermineFormat(Frm)}%s\x1b[0m`;
-    console.log(str, "[ECHO_LOG] " + Log);
+    console.log(str,  Log);
 
 }
 
